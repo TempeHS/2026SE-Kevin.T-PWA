@@ -1,0 +1,4 @@
+-- database: ./data_source.db
+
+SELECT * FROM extension;
+SELECT * FROM extension WHERE language like 'HTML';

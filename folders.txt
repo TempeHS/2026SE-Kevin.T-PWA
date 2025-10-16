@@ -1,4 +1,0 @@
-css
-icons
-images
-js
