@@ -124,3 +124,18 @@ nav h1 {
   text-align: justify;
   text-justify: inter-word;
 }
+
+.form-control {
+  color: #222;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+}
+
+.form-label {
+  color: #222;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}

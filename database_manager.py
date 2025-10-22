@@ -14,7 +14,9 @@ def insertContact(email, name):
     cur = con.cursor()
     try:
         cur.execute("INSERT INTO contact_list (email,name) VALUES (?,?)", (email, name))
+        con.commit()
+        con.close()
+        return (True, "Inserted")
     except sql.IntegrityError:
-        print("email already exists")
-    con.commit()
-    con.close()
+        con.close()
+        return (False, "email already exists")
