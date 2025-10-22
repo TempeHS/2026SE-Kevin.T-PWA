@@ -1,7 +1,10 @@
 {% extends 'layout.html' %} {% block content %}
+<h1>Join our mailing list</h1>
+<br />
 <form action="/add.html" method="POST" class="box">
   <div>
     <label class="form-label">Email address</label>
+    <br />
     <input
       name="email"
       type="email"
@@ -13,7 +16,8 @@
   </div>
   <div>
     <label class="form-label">Name</label>
-    <textarea class="form-control" name="name" id="name" rows="1"></textarea>
+    <br />
+    <input class="form-control" name="name" id="name" rows="1"></input>
   </div>
   <br />
   <div>
