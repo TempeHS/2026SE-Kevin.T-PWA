@@ -26,12 +26,12 @@ def add():
         return render_template("/add.html", error_message=None)
 
 
-@app.route("/test.html", methods=["POST", "GET"])
+@app.route("/about.html", methods=["POST", "GET"])
 def test():
     if request.method == "POST":
-        return render_template("/test.html", jit=True)
+        return render_template("/about.html", jit=True)
     else:
-        return render_template("/test.html")
+        return render_template("/about.html")
 
 
 if __name__ == "__main__":

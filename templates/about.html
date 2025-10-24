@@ -8,15 +8,17 @@
   @keyframes jit {
     from {
       transform: rotate3d(1, 1, 1, 0deg);
+      filter: hue-rotate(0deg) drop-shadow(2px 4px 6px black);
     }
     to {
       transform: rotate3d(1, 1, 1, 360deg);
+      filter: hue-rotate(720deg) drop-shadow(2px 4px 6px black);
     }
   }
 </style>
 
 {% else %}
-<form action="/test.html" method="POST" class="box">
+<form action="/about.html" method="POST" class="box">
   <button type="submit" class="btn">Submit</button>
 </form>
 {% endif %}
